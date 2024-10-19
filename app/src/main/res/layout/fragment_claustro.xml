@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClaustroFragment">
+
+     <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/oval_shape"
+        android:orientation="horizontal"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="5dp">
+
+
+        <ImageView
+            android:id="@+id/imageViewClaustro"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/circular_shape"
+            android:clipToOutline="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/claustro"
+            tools:ignore="ContentDescription" />
+
+        <!-- Texto Descriptivo -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Claustro de la Compañía"
+                android:textColor="@color/yellow"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvDescripcion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="Fue construido en el siglo XVII con piedra de sillar, característica de la región. Sus corredores están adornados con arcos y columnas que presentan intrincados grabados de estilo barroco mestizo, una fusión de elementos indígenas y europeos. Este espacio ha sido utilizado históricamente como residencia para los sacerdotes jesuitas y, actualmente, alberga diversas tiendas y cafeterías, siendo un lugar de interés turístico por su belleza arquitectónica y valor histórico."
+                android:textColor="@color/white"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
